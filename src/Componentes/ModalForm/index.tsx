@@ -25,7 +25,7 @@ export default function ModalForm({ cadastrarNota }: { cadastrarNota: (nota: Not
     setCor("")
   }
   return (
-    <div className='mt-4'>
+    <div >
       <Dialog.Root> 
         <Dialog.Trigger>
           <div className='border-blue-900 border-[1px] p-[2px]  rounded-md'>
