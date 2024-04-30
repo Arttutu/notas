@@ -5,12 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "nomad": "node server.js",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "uuid": "^9.0.1"

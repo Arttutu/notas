@@ -19,7 +19,7 @@ function App() {
   }
   return(
     <div className="flex flex-col md:flex md:flex-row ">
-      <header className=" text-blue-900 w-full h-auto md:w-2/12 bg-gray-100 md:h-screen flex justify-center py-4">
+      <header className=" text-blue-900 w-full h-auto md:w-[500px] bg-gray-100 md:h-screen flex justify-center py-4">
           <h1 className="font-bold">Menu</h1>
       </header>
       <main className="flex flex-col items-left mx-4 py-4">

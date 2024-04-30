@@ -10,20 +10,25 @@ export default function ModalForm({ cadastrarNota }: { cadastrarNota: (nota: Not
   const [data, setData] = useState("");
   const [cor, setCor] = useState("");
 
-  const Salvar = (e: { preventDefault: () => void; }) => {
-    e.preventDefault()
-    cadastrarNota({
+  const Salvar = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const novaNota = {
       titulo,
       descricao,
       data,
       cor,
-      id: uuidv4(),
-    })
-    setTitulo("")
-    setDescricao("")
-    setData("")
-    setCor("")
-  }
+      id: uuidv4()
+    };
+
+
+      cadastrarNota( novaNota);
+      setTitulo("");
+      setDescricao("");
+      setData("");
+      setCor("");
+    
+  };
+  
   return (
     <div >
       <Dialog.Root> 
